@@ -1,7 +1,6 @@
 # SGAcopilot
-copiloto para la generación de las fichas de seguridad de sustancias 
 
-Construir un **copiloto para fichas técnicas de sustancias químicas** que considere las normas de seguridad es un proyecto interesante y útil. Aquí te guío paso a paso para desarrollarlo:
+## Construir un **copiloto para fichas técnicas de sustancias químicas** que considere las normas de seguridad
 
 ---
 
