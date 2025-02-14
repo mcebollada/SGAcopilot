@@ -1,4 +1,4 @@
-![logo](https://github.com/user-attachments/assets/945f6bc3-db7b-4e87-a86d-c99b55e606c4,h_200,w_200)
+![logo](https://github.com/user-attachments/assets/945f6bc3-db7b-4e87-a86d-c99b55e606c4)
 
 # SGAcopilot 
 
