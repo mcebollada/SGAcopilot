@@ -1,4 +1,4 @@
-# SGAcopilot
+# SGAcopilot ![Javatpoint](Mi PC/Descargas/Javatpoint.png)  
 
 ## Construir un **copiloto para fichas técnicas de sustancias químicas** que considere las normas de seguridad
 
