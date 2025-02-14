@@ -1,6 +1,6 @@
-# SGAcopilot 
-
 ![logotipo](/logotipo.png)
+
+# SGAcopilot 
 
 ## Construir un **copiloto para fichas técnicas de sustancias químicas** que considere las normas de seguridad
 
