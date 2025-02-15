@@ -1,0 +1,65 @@
+# Guion de configuracion local para desarrollo y prueba unitaria
+
+#1️⃣ Actualizar el sistema
+#Abre la terminal y ejecuta:
+
+sudo apt update && sudo apt upgrade -y
+
+#2️⃣ Instalar Python y pip
+#Ubuntu 24.04 viene con Python 3, pero asegúrese de tener pipinstalado:
+
+sudo apt install python3 python3-pip -y
+pip install --upgrade pip
+
+#Verifica la versión instalada:
+
+python3 --version
+pip3 --version
+
+#3️⃣ Crear un entorno virtual (opcional pero recomendado)
+#Para evitar conflictos entre paquetes, utilice un entorno virtual:
+
+python3 -m venv flask_env
+source flask_env/bin/activate
+
+#4️⃣ Instalar Flask
+
+pip3 install flask
+
+#Verifica la instalación con:
+
+python -m flask --version
+
+
+#5️⃣ Crea una aplicación Flask de prueba
+#Crea un archivo app.py:
+
+echo "from flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef home(): return ('Hello, Flask')\nif __name__ == '__main__': app.run(host='0.0.0.0', port=5000, debug=True)\n" > app.py
+
+
+#Ejecuta la aplicación:
+
+python app.py
+
+#Ahora puedes acceder a http://localhost:5000en tu navegador. 🚀
+
+#6️⃣ Mantener Flask en ejecución (opcional)
+#Si quieres que tu aplicación Flask siga ejecutándose en segundo plano:
+
+nohup python app.py &  
+
+
+# Paquetes necesarios
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo snap install rustup  --classic
+sudo apt  install cargo
+pip install --upgrade maturin
+pip install safetensors==0.3.1
+
+pip install numpy
+pip install pandas
+pip install rdkit-pypi
+
+pip install transformers
+pip install pubchempy
