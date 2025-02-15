@@ -6,6 +6,8 @@
 
 ---
 
+https://github.com/mcebollada/SGAcopilot
+
 ### **1. Definir el alcance del proyecto**
 - **Objetivo**: Crear una herramienta que ayude a generar, analizar y gestionar fichas técnicas de sustancias químicas, asegurando el cumplimiento de las normativas de seguridad.
 - **Funcionalidades clave**:
