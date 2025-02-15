@@ -1,0 +1,51 @@
+#Container management commands
+
+#       command 							description
+docker create image [ command ] 	#create the container
+docker run image [ command ] 		#= create + start
+docker rename container new name 	#rename the container
+docker update container 			#update the container config
+docker start container. . . 		#start the container
+docker stop container. . . 			#graceful2 stop
+docker kill container. . . 			#kill (SIGKILL) the container
+docker restart container. . . 		#= stop + start
+docker pause container. . . 		#suspend the container
+docker unpause container. . . 		#resume the container
+docker rm [ -f3 ] container. . . 	#destroy the container
+
+#=======================================================================
+
+ 
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+sudo docker --version
+
+sudo usermod -aG docker $USER
+
+sudo systemctl enable docker
+sudo systemctl start docker
+
+docker run hello-world
+
+#=======================================================================
+
+docker pull nginx latest
+docker images
+docker run --name d_nginx -d -p 8081:80 nginx
+docker ps
+
+docker stop d_nginx
+docker rm d_nginx
+
+ssh root@localhost:8081
