@@ -1,5 +1,7 @@
 ![logo](https://github.com/user-attachments/assets/945f6bc3-db7b-4e87-a86d-c99b55e606c4)
 
+
+
 # SGAcopilot 
 
 ## Construir un **copiloto para fichas técnicas de sustancias químicas** que considere las normas de seguridad
